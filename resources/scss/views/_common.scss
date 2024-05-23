@@ -1,0 +1,364 @@
+// 공통 scss
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+$scrollbarWidth: 8px;
+
+// 스크롤바 css
+::-webkit-scrollbar {
+  width: $scrollbarWidth;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.1); /*스크롤바의 색상*/
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ddd; /*스크롤바 트랙 색상*/
+}
+
+// 달력
+.ui-datepicker {
+  width: 16em !important;
+  padding: rem(10px) !important;
+  @media (max-width: $mo-l) {
+    width: 15em !important;
+  }
+  &.ui-widget.ui-widget-content {
+    margin-top: rem(10px);
+  }
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    transform: translateY(-50%) !important;
+    top: 50% !important;
+    .ui-icon {
+      width: 16px;
+      height: 16px;
+      background-repeat: no-repeat !important;
+      background-position: 0 0 !important;
+      background-size: cover !important;
+    }
+  }
+  .ui-datepicker-prev {
+    .ui-icon {
+      background-image: url('../images/components/icon-arrow-prev-bk-32x32.png') !important;
+    }
+  }
+  .ui-datepicker-next {
+    .ui-icon {
+      background-image: url('../images/components/icon-arrow-next-bk-32x32.png') !important;
+    }
+  }
+  .ui-widget-header {
+    background-color: #fff;
+    border: 0;
+  }
+  .ui-datepicker-title {
+    font-size: rem(12px);
+    select {
+      width: calc(45% - 10px) !important;
+      margin: 0 rem(5px) !important;
+      padding: rem(5px) rem(10px) !important;
+      border: 1px solid #ddd !important;
+      font-size: rem(14px) !important;
+    }
+  }
+  .ui-state-default {
+    border: 0 !important;
+    background-color: #fff !important;
+    text-align: center !important;
+    font-size: rem(16px);
+    &.ui-state-active {
+      background-color: $primary !important;
+      border-color: transparent !important;
+      color: #fff !important;
+    }
+  }
+}
+
+// swiper 슬라이드
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+  .swiper-button-next,
+  .swiper-button-prev {
+    @include size(70px);
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    &:after {
+      display: none;
+    }
+  }
+  .swiper-button-next {
+    transform: rotate(180deg);
+    background-image: url('../images/icon/icon-slider-arrow-next-bk-70x70.png');
+  }
+  .swiper-button-prev {
+    background-image: url('../images/icon/icon-slider-arrow-prev-bk-70x70.png');
+  }
+  .swiper-pagination {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0 !important;
+    margin-top: 20px;
+    .swiper-pagination-bullet {
+      display: block;
+    }
+  }
+}
+
+// body, html 스크롤 막기
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+  &.scroll-disable {
+    overflow: hidden !important;
+    &.responsive-scroll {
+      @media (min-width: 961px) {
+        overflow: visible !important;
+      }
+    }
+  }
+}
+
+// 아코디언
+.accordion-list {
+  .accordion-header {
+    cursor: pointer;
+  }
+  .accordion-body {
+    display: none;
+  }
+}
+
+// 모바일,pc 구분
+.mobile-show {
+  display: none;
+}
+@media (max-width: $mo-l) {
+  .pc-show {
+    display: none;
+  }
+  .mobile-show {
+    display: block;
+  }
+}
+
+// 탭컨텐츠
+.ui-tab-content {
+  display: none;
+  &:nth-of-type(1) {
+    display: block;
+  }
+}
+
+.tui-datetime-input {
+  width: 100%;
+  height: auto;
+}
+.tui-datepicker {
+  // display: flex;
+  // align-items: flex-start;
+  z-index: 10;
+  font-size: rem(14px);
+  &.tui-hidden {
+    display: none;
+  }
+  * {
+    font-size: inherit;
+  }
+  .tui-datepicker-footer {
+    .tui-timepicker {
+      padding: 10px;
+    }
+  }
+  .tui-timepicker-select {
+    width: 64px;
+    height: 32px;
+  }
+}
+.tui-timepicker-select {
+  font-size: rem(14px) !important;
+}
+.tui-datepicker-input {
+  border: 0;
+  .datepicker-input {
+    font-size: rem(15px);
+  }
+  .tui-ico-date {
+    bottom: rem(10px);
+    background-position: -17px -14px !important;
+  }
+}
+.tui-datepicker-type-date {
+  width: 245px;
+}
+.tui-calendar {
+  width: 100%;
+  th,
+  td {
+    height: 35px;
+  }
+}
+.tui-datepicker-body .tui-timepicker,
+.tui-datepicker-footer .tui-timepicker {
+  width: 100%;
+}
+
+.blind {
+  @include blind();
+}
+
+.flex-box--wrap {
+  display: flex;
+}
+
+.alincnt {
+  align-items: center;
+}
+
+.alinbase {
+  align-items: baseline;
+}
+
+.sns-share--list {
+  display: flex;
+  align-items: center;
+  .sns-share--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include _vw(width, 40px);
+    @include _vw(height, 40px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    & + .sns-share--item {
+      @include _vw(margin-left, 20px);
+    }
+    &.facebook {
+      background-image: url('../images/icon/ico-facebook.png');
+    }
+    &.twitter {
+      background-image: url('../images/icon/ico-twitter.png');
+    }
+    &.kakao {
+      background-image: url('../images/icon/ico-kakao.png');
+    }
+    &.link {
+      background-image: url('../images/icon/ico-link.png');
+    }
+  }
+}
+
+.c-common-input--style {
+  border: 1px solid #0000004d;
+  @include _vw(padding-top, 6px);
+  @include _vw(padding-bottom, 6px);
+  @include _vw(padding-left, 10px);
+  @include _vw(padding-right, 10px);
+  @include _vw(border-radius, 5px);
+  @include _vw(line-height, 40px);
+  @include _vw(min-height, 40px);
+  @include _vw(font-size, 14px);
+  @include _vw(line-height, 16.8px);
+  letter-spacing: -0.02em;
+  text-align: left;
+  &::placeholder {
+    color: #0000004d;
+  }
+}
+
+.input-cover {
+  .c-common-input--style {
+    border: 1px solid #0000004d;
+    @include _vw(padding-top, 6px);
+    @include _vw(padding-bottom, 6px);
+    @include _vw(padding-left, 10px);
+    @include _vw(padding-right, 10px);
+    @include _vw(border-radius, 5px);
+    @include _vw(line-height, 40px);
+    @include _vw(min-height, 40px);
+    @include _vw(font-size, 14px);
+    @include _vw(line-height, 16.8px);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    text-align: left;
+    &::placeholder {
+      color: #0000004d;
+    }
+  }
+}
+.input-cover.focus .form-input,
+.input-cover.open-datepicker .form-input {
+  border: 1px solid #0000004d !important;
+}
+
+.c-common-button {
+  position: relative;
+  background: linear-gradient(180deg, #ffed46 0%, #ffa800 100%);
+  border: 2px solid #2d1a06;
+  font-family: $jalnan;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: inset 0px -4px 0px 0px #00000040, 0px 4px 0px 0px #00000099;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 4px);
+    height: 2px;
+    border-radius: 2px;
+    background: #fff;
+  }
+}
+
+.btn-effect {
+  overflow: hidden;
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    @include _vw(top, -100px);
+    left: 0;
+    @include _vw(width, 30px);
+    height: 100%;
+    // background: linear-gradient(180deg, #ffed46 0%, #ffa800 100%);
+    background: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+  }
+}
+
+@keyframes shiny-btn1 {
+  0% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+
+  80% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}

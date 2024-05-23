@@ -1,0 +1,115 @@
+.privacy {
+  #header {
+    position: static;
+    .logo-area {
+      @include _vw(padding-top, 30px);
+      @include _vw(padding-bottom, 20px);
+      @include _vw(padding-left, 20px);
+      @include _vw(padding-right, 20px);
+    }
+    .logo {
+      background: url('../images/icon/ico-orion-header-red.png') no-repeat 0 0;
+      background-size: cover;
+    }
+  }
+  #footer .section-inner {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .privacy-item {
+    @include _vw(margin-top, 10px);
+    @include _vw(padding-left, 15px);
+    @include _vw(padding-right, 15px);
+    padding-top: 0;
+    padding-bottom: 0;
+    &.item01 {
+      @include _vw(margin-top, 15px);
+    }
+    &.item02 {
+      .privacy-table--wrap {
+        @include _vw(margin-top, 10px);
+      }
+    }
+    &.heading {
+      @include _vw(padding-top, 5px);
+    }
+    .privacy-big--title {
+      @include _vw(font-size, 16px);
+      font-weight: 700;
+      @include _vw(line-height, 19.2px);
+      letter-spacing: -0.03em;
+      text-align: center;
+      @include _vw(margin-bottom, 15px);
+    }
+    .privacy-desc {
+      @include _vw(font-size, 10px);
+      font-weight: 500;
+      @include _vw(line-height, 12px);
+      letter-spacing: -0.03em;
+      text-align: left;
+      a {
+        color: #0687ff;
+      }
+    }
+    .privacy-sub-big--title {
+      @include _vw(font-size, 12px);
+      font-weight: 700;
+      @include _vw(line-height, 14.4px);
+      letter-spacing: -0.03em;
+      text-align: left;
+      @include _vw(margin-bottom, 10px);
+    }
+  }
+  .privacy-table--wrap {
+    table {
+      width: 100%;
+      border: 0.5px solid #2d1a06;
+    }
+    th {
+      @include _vw(font-size, 10px);
+      font-weight: 700;
+      @include _vw(line-height, 12px);
+      letter-spacing: -0.03em;
+      text-align: center;
+      @include _vw(height, 25px);
+      background: #9785291a;
+      &:nth-child(2) {
+        border-left: 0.5px solid #2d1a06;
+        border-right: 0.5px solid #2d1a06;
+      }
+    }
+    tr {
+      border-top: 0.5px solid #2d1a06;
+    }
+    td {
+      text-align: center;
+      @include _vw(padding-top, 10px);
+      @include _vw(padding-bottom, 10px);
+      @include _vw(padding-left, 10px);
+      @include _vw(padding-right, 10px);
+      line-height: 1;
+      height: 80px;
+      &:nth-child(2) {
+        border-left: 0.5px solid #2d1a06;
+        border-right: 0.5px solid #2d1a06;
+      }
+      p {
+        @include _vw(font-size, 10px);
+        font-weight: 500;
+        @include _vw(line-height, 12px);
+        letter-spacing: -0.03em;
+        text-align: center;
+        text-align: center;
+      }
+      strong {
+        @include _vw(font-size, 12px);
+        font-weight: 700;
+        @include _vw(line-height, 14.32px);
+        letter-spacing: -0.03em;
+        text-align: center;
+        text-decoration: underline;
+      }
+    }
+  }
+}

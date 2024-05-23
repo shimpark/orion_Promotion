@@ -1,0 +1,37 @@
+<div class="layer-popup c-common-orion vote-popup full-scroll" id="votePopup">
+  <div class="popup-container small">
+    <div class="popup-header">
+      <button type="button" class="btn-close popup-close">닫기</button>
+    </div>
+    <div class="popup-content">
+      <div class="popup-inner">
+        <div class="vote-title--wrap">
+          <h2 class="vote-big--title">
+            <img src="../../../resources/images/popup/img-vote-popup-title.png" alt="스트리트 꼬북 파이터" />
+          </h2>
+          <p class="vote-desc">
+            역대급 신제품에 대적할<br />
+            최강 꼬북 파이터는 과연 누가 될 것인가?
+          </p>
+        </div>
+        <div class="popup-con">
+          <div class="vote-select-item--wrap">
+            <label for="voteConsoupFavor" class="vote-image--item soup">
+              <input type="radio" name="voteFavor" id="voteConsoupFavor" />
+              <div class="vote-image"></div>
+            </label>
+            <label for="voteChocolateFavor" class="vote-image--item chocolate">
+              <input type="radio" name="voteFavor" id="voteChocolateFavor" />
+              <div class="vote-image"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-footer">
+      <div class="btn-area">
+        <button type="button" class="btn btn-ok popup-vote" onclick="layerPopup.closePopup('votePopup'); layerPopup.openPopup('voteCompletedPopup')">투표하기</button>
+      </div>
+    </div>
+  </div>
+</div>
