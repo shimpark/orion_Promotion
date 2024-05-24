@@ -184,7 +184,7 @@
     });
   }
   function linkMoveTo() {
-    $('.floating-button').on('click', function () {
+    $('.floating-button, .floating-vote-scroll-btn').on('click', function () {
       const linkValue = $(this).data('link');
       if (linkValue) {
         var offset = $('#' + linkValue).offset().top;
@@ -427,8 +427,10 @@
       var _sct = $(window).scrollTop();
       if (_sct > 0) {
         $('#header').addClass('scroll');
+        $('.floating-vote-scroll-btn').addClass('scroll');
       } else {
         $('#header').removeClass('scroll');
+        $('.floating-vote-scroll-btn').removeClass('scroll');
       }
     }
   }
