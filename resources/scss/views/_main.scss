@@ -3,7 +3,8 @@
 .visual--wrap {
   position: relative;
   overflow: hidden;
-  padding-bottom: 194.444%;
+  // padding-bottom: 194.444%;
+  padding-bottom: 181.666%;
   .box-inner {
     position: absolute;
     top: 0;
@@ -16,7 +17,7 @@
   .visual-img--title {
     position: absolute;
     // top: 89px;
-    @include _vw(top, 89px);
+    @include _vw(top, 60px);
     left: 50%;
     transform: translateX(-50%);
     @include _vw(max-width, 324px);
@@ -25,7 +26,8 @@
   }
   .vs-img--wrap {
     position: absolute;
-    top: 43%;
+    // top: 43%;
+    top: 38%;
     left: 50%;
     transform: translateX(-50%);
     @include _vw(max-width, 99px);
@@ -1053,14 +1055,11 @@
   transform: translateX(-50%);
   z-index: 100;
 }
-.floating-box-link {
-  // animation: up-ani 0.3s 0.5s both;
-  // transform: translate(-50%, 100%);
-}
 .floating-button--wrap {
+  position: relative;
   display: flex;
   @include _vw(padding-top, 10px);
-  @include _vw(padding-bottom, 10px);
+  @include _vw(padding-bottom, 9px);
   background: linear-gradient(180deg, #ffed46 0%, #ffa800 100%);
 }
 .floating-button {
@@ -1068,9 +1067,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 33.33%;
+  // width: 33.33%;
+  &:nth-child(1) {
+    @include _vw(min-width, 110px);
+  }
   &:nth-child(2) {
     position: relative;
+    @include _vw(min-width, 140px);
     &::before {
       content: '';
       position: absolute;
@@ -1087,6 +1090,12 @@
       @include _vw(height, 40px);
       background: #000;
     }
+    .small-text {
+      @include _vw(margin-bottom, 1px);
+    }
+  }
+  &:nth-child(3) {
+    @include _vw(min-width, 110px);
   }
   .small-text {
     @include _vw(font-size, 10px);
@@ -1103,5 +1112,8 @@
     @include _vw(line-height, 17.7px);
     letter-spacing: -0.02em;
     text-align: center;
+  }
+  .img-vote--title {
+    @include _vw(width, 77px);
   }
 }
