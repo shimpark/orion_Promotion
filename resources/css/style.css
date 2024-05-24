@@ -1591,8 +1591,6 @@ button:focus {
   line-height: 31.4666666667px;
   letter-spacing: -0.02em;
   text-align: center;
-  padding-left: 14.6666666667px;
-  padding-right: 14.6666666667px;
   padding-top: 0;
   padding-bottom: 0;
   padding-bottom: 26.6666666667px;
@@ -1605,16 +1603,6 @@ button:focus {
 @media (max-width: 480px) {
   .common-complete-popup .popup-big--title {
     line-height: 6.5555555556vw;
-  }
-}
-@media (max-width: 480px) {
-  .common-complete-popup .popup-big--title {
-    padding-left: 3.0555555556vw;
-  }
-}
-@media (max-width: 480px) {
-  .common-complete-popup .popup-big--title {
-    padding-right: 3.0555555556vw;
   }
 }
 @media (max-width: 480px) {

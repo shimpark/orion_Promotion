@@ -204,8 +204,10 @@
     @include _vw(line-height, 23.6px);
     letter-spacing: -0.02em;
     text-align: center;
-    @include _vw(padding-left, 11px);
-    @include _vw(padding-right, 11px);
+    // @include _vw(padding-left, 11px);
+    // @include _vw(padding-right, 11px);
+    // @include _vw(padding-left, 8px);
+    // @include _vw(padding-right, 8px);
     padding-top: 0;
     padding-bottom: 0;
     @include _vw(padding-bottom, 20px);
