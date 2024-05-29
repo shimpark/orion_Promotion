@@ -313,6 +313,10 @@
         left: 0,
         width: '100%',
       });
+      $('.floating-vote-scroll-btn').css({
+        opacity: 0,
+        visibility: 'hidden',
+      });
 
       if (!$('.layer-popup-dim').length) {
         // dim없을경우 생성
