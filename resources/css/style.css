@@ -2364,7 +2364,7 @@ button:focus {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 29.3333333333px;
-  padding-right: 2.6666666667px;
+  padding-right: 29.3333333333px;
 }
 @media (max-width: 480px) {
   .event-popup .privacy-wrap .privacy-check--wrap .privacy-scroll-box--item th {
@@ -2393,7 +2393,7 @@ button:focus {
 }
 @media (max-width: 480px) {
   .event-popup .privacy-wrap .privacy-check--wrap .privacy-scroll-box--item th {
-    padding-right: 0.5555555556vw;
+    padding-right: 6.1111111111vw;
   }
 }
 .event-popup .privacy-wrap .privacy-check--wrap .privacy-scroll-box--item th:nth-child(2) {
@@ -4102,6 +4102,7 @@ body.scroll-disable {
   }
 }
 .vote-favor--wrap .button--wrap .c-common-button {
+  width: 100%;
   padding-top: 13.3333333333px;
   padding-bottom: 13.3333333333px;
   padding-left: 16px;
@@ -4114,6 +4115,9 @@ body.scroll-disable {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 17.3333333333px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffed46), color-stop(50%, #ffa800), to(#ff4d00));
+  background: linear-gradient(180deg, #ffed46 0%, #ffa800 50%, #ff4d00 100%);
+  border-radius: 6.6666666667px;
 }
 @media (max-width: 480px) {
   .vote-favor--wrap .button--wrap .c-common-button {
@@ -4148,6 +4152,25 @@ body.scroll-disable {
 @media (max-width: 480px) {
   .vote-favor--wrap .button--wrap .c-common-button {
     margin-bottom: 3.6111111111vw;
+  }
+}
+@media (max-width: 480px) {
+  .vote-favor--wrap .button--wrap .c-common-button {
+    border-radius: 1.3888888889vw;
+  }
+}
+.vote-favor--wrap .button--wrap .c-common-button .text {
+  max-width: 366.6666666667px;
+  height: 37.3333333333px;
+}
+@media (max-width: 480px) {
+  .vote-favor--wrap .button--wrap .c-common-button .text {
+    max-width: 76.3888888889vw;
+  }
+}
+@media (max-width: 480px) {
+  .vote-favor--wrap .button--wrap .c-common-button .text {
+    height: 7.7777777778vw;
   }
 }
 .vote-favor--wrap .button--wrap .vote-info-desc {

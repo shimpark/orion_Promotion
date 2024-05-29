@@ -565,7 +565,7 @@
           @include _vw(padding-top, 9px);
           @include _vw(padding-bottom, 9px);
           @include _vw(padding-left, 22px);
-          @include _vw(padding-right, 2px);
+          @include _vw(padding-right, 22px);
 
           &:nth-child(2) {
             border-left: 1px solid #2d1a06;

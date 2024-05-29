@@ -138,6 +138,7 @@
     width: 100%;
     z-index: 10;
     .c-common-button {
+      width: 100%;
       @include _vw(padding-top, 10px);
       @include _vw(padding-bottom, 10px);
       @include _vw(padding-left, 12px);
@@ -150,6 +151,12 @@
       text-align: center;
       margin: 0 auto;
       @include _vw(margin-bottom, 13px);
+      background: linear-gradient(180deg, #ffed46 0%, #ffa800 50%, #ff4d00 100%);
+      @include _vw(border-radius, 5px);
+      .text {
+        @include _vw(max-width, 275px);
+        @include _vw(height, 28px);
+      }
     }
     .vote-info-desc {
       @include _vw(max-width, 296px);
