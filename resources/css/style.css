@@ -4407,6 +4407,71 @@ body.scroll-disable {
     padding-top: 67.5vw;
   }
 }
+.vote-favor--wrap .vote-number--wrap {
+  position: absolute;
+  top: 573.3333333333px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 20;
+  padding: 13.3333333333px;
+  width: 426.6666666667px;
+  height: 64px;
+}
+@media (max-width: 480px) {
+  .vote-favor--wrap .vote-number--wrap {
+    top: 119.4444444444vw;
+  }
+}
+@media (max-width: 480px) {
+  .vote-favor--wrap .vote-number--wrap {
+    padding: 2.7777777778vw;
+  }
+}
+@media (max-width: 480px) {
+  .vote-favor--wrap .vote-number--wrap {
+    width: 88.8888888889vw;
+  }
+}
+@media (max-width: 480px) {
+  .vote-favor--wrap .vote-number--wrap {
+    height: 13.3333333333vw;
+  }
+}
+.vote-favor--wrap .vote-number--wrap .vote-number--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  font-size: 21.3333333333px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-align: right;
+  border: 2px solid transparent;
+  color: #fff;
+  padding-left: 6.6666666667px;
+}
+@media (max-width: 480px) {
+  .vote-favor--wrap .vote-number--wrap .vote-number--item {
+    font-size: 4.4444444444vw;
+  }
+}
+@media (max-width: 480px) {
+  .vote-favor--wrap .vote-number--wrap .vote-number--item {
+    padding-left: 1.3888888889vw;
+  }
+}
+.vote-favor--wrap .vote-number--wrap .vote-number--item:last-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 6.6666666667px;
+}
+@media (max-width: 480px) {
+  .vote-favor--wrap .vote-number--wrap .vote-number--item:last-child {
+    padding-right: 1.3888888889vw;
+  }
+}
 .vote-favor--wrap .gage-num--wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4434,7 +4499,7 @@ body.scroll-disable {
           justify-content: flex-end;
 }
 .vote-favor--wrap .gage-num--wrap .num-item .num {
-  font-size: 80px;
+  font-size: 66.6666666667px;
   font-weight: 900;
   line-height: 96.0133333333px;
   letter-spacing: -0.02em;
@@ -4444,7 +4509,7 @@ body.scroll-disable {
 }
 @media (max-width: 480px) {
   .vote-favor--wrap .gage-num--wrap .num-item .num {
-    font-size: 16.6666666667vw;
+    font-size: 13.8888888889vw;
   }
 }
 @media (max-width: 480px) {

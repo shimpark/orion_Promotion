@@ -274,6 +274,30 @@
   .live-compare--wrap {
     @include _vw(padding-top, 243px);
   }
+  .vote-number--wrap {
+    position: absolute;
+    @include _vw(top, 430px);
+    display: flex;
+    z-index: 20;
+    @include _vw(padding, 10px);
+    @include _vw(width, 320px);
+    @include _vw(height, 48px);
+    .vote-number--item {
+      display: flex;
+      width: 50%;
+      @include _vw(font-size, 16px);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      text-align: right;
+      border: 2px solid transparent;
+      color: #fff;
+      @include _vw(padding-left, 5px);
+      &:last-child {
+        justify-content: flex-end;
+        @include _vw(padding-right, 5px);
+      }
+    }
+  }
   .gage-num--wrap {
     display: flex;
     @include _vw(width, 320px);
@@ -286,7 +310,7 @@
         justify-content: flex-end;
       }
       .num {
-        @include _vw(font-size, 60px);
+        @include _vw(font-size, 50px);
         font-weight: 900;
         @include _vw(line-height, 72.01px);
         letter-spacing: -0.02em;
