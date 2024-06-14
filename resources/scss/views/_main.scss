@@ -729,6 +729,10 @@
           .sns-deco-img--wrap {
             bottom: 85%;
             @include _vw(border-radius, 52px);
+            .sns-img {
+              @include _vw(width, 36px);
+              @include _vw(height, 36px);
+            }
           }
         }
 
@@ -768,6 +772,7 @@
           @include _vw(padding-left, 10px);
           @include _vw(padding-right, 10px);
           background: #fff;
+          width: max-content;
           z-index: 10;
           .sns-img {
             @include _vw(width, 30px);
