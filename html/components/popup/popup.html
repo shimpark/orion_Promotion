@@ -69,6 +69,14 @@
             <div class="name">confirm 팝업</div>
             <button type="button" class="btn small primary" onclick="layerPopup.openPopup('systemConfirmPopup', true)">확인</button>
           </div>
+          <div class="list-row">
+            <div class="name">꼬북칩 공통 팝업</div>
+            <button type="button" class="btn small primary" onclick="layerPopup.openPopup('orionCommonPopup', true)">확인</button>
+          </div>
+          <div class="list-row">
+            <div class="name">이벤트 종료 안내 팝업</div>
+            <button type="button" class="btn small primary" onclick="layerPopup.openPopup('endEndPopup', true)">확인</button>
+          </div>
         </div>
         <div class="list-item">
           <h2 class="list-type">투표 및 응모관련 팝업</h2>
@@ -804,6 +812,47 @@
       <div class="popup-footer">
         <div class="btn-area">
           <button type="button" class="btn btn-ok popup-close">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 꼬북칩 공통 사용 팝업 -->
+  <div class="layer-popup c-common-orion common-complete-popup" id="orionCommonPopup">
+    <div class="popup-container small">
+      <div class="popup-header">
+        <button type="button" class="btn-close popup-close">닫기</button>
+      </div>
+      <div class="popup-content">
+        <div class="popup-inner">
+          <div class="big-title--wrap no-padding">
+            <h2 class="popup-big--title">꼬북칩 공통 사용 팝업 입니다.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <div class="btn-area">
+          <button type="button" class="btn btn-ok popup-close">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 이벤트 종료 안내 팝업 -->
+  <div class="layer-popup full-scroll c-common-orion event-popup event-end-popup" id="endEndPopup">
+    <div class="popup-container small">
+      <div class="popup-header">
+        <button type="button" class="btn-close popup-close">닫기</button>
+      </div>
+      <div class="popup-content">
+        <div class="popup-inner">
+          <div class="end-box--wrap">
+            <div class="end-box--top">
+              <div class="img">
+                <img src="../../../resources/images/popup/img-end-popup--content.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

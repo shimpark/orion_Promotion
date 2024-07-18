@@ -196,6 +196,12 @@
   }
   .big-title--wrap {
     border-bottom: 1px solid #000000;
+    &.no-padding {
+      border-bottom: none;
+      .popup-big--title {
+        padding-bottom: 0 !important;
+      }
+    }
   }
   .popup-big--title {
     font-family: $jalnan;
@@ -633,6 +639,23 @@
     }
     .info-desc {
       @include _vw(margin-top, 5px);
+    }
+  }
+  &.event-end-popup {
+    .popup-container.small {
+      @include _vw(max-width, 340px);
+    }
+    .popup-header .btn-close {
+      @include _vw(top, 25px);
+      @include _vw(right, 15px);
+      @include _vw(width, 20px);
+      @include _vw(height, 20px);
+    }
+    .popup-inner {
+      @include _vw(padding-top, 60px);
+      @include _vw(padding-bottom, 60px);
+      @include _vw(padding-left, 16px);
+      @include _vw(padding-right, 16px);
     }
   }
 }

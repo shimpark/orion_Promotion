@@ -1584,6 +1584,12 @@ button:focus {
 .common-complete-popup .big-title--wrap {
   border-bottom: 1px solid #000000;
 }
+.common-complete-popup .big-title--wrap.no-padding {
+  border-bottom: none;
+}
+.common-complete-popup .big-title--wrap.no-padding .popup-big--title {
+  padding-bottom: 0 !important;
+}
 .common-complete-popup .popup-big--title {
   font-family: "JalnanGothic", arial, sans-serif, Arial, dotum, "돋움";
   font-size: 26.6666666667px;
@@ -2560,6 +2566,66 @@ button:focus {
 @media (max-width: 480px) {
   .event-popup .sns-url--wrap .info-desc {
     margin-top: 1.3888888889vw;
+  }
+}
+.event-popup.event-end-popup .popup-container.small {
+  max-width: 453.3333333333px;
+}
+@media (max-width: 480px) {
+  .event-popup.event-end-popup .popup-container.small {
+    max-width: 94.4444444444vw;
+  }
+}
+.event-popup.event-end-popup .popup-header .btn-close {
+  top: 33.3333333333px;
+  right: 20px;
+  width: 26.6666666667px;
+  height: 26.6666666667px;
+}
+@media (max-width: 480px) {
+  .event-popup.event-end-popup .popup-header .btn-close {
+    top: 6.9444444444vw;
+  }
+}
+@media (max-width: 480px) {
+  .event-popup.event-end-popup .popup-header .btn-close {
+    right: 4.1666666667vw;
+  }
+}
+@media (max-width: 480px) {
+  .event-popup.event-end-popup .popup-header .btn-close {
+    width: 5.5555555556vw;
+  }
+}
+@media (max-width: 480px) {
+  .event-popup.event-end-popup .popup-header .btn-close {
+    height: 5.5555555556vw;
+  }
+}
+.event-popup.event-end-popup .popup-inner {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 21.3333333333px;
+  padding-right: 21.3333333333px;
+}
+@media (max-width: 480px) {
+  .event-popup.event-end-popup .popup-inner {
+    padding-top: 16.6666666667vw;
+  }
+}
+@media (max-width: 480px) {
+  .event-popup.event-end-popup .popup-inner {
+    padding-bottom: 16.6666666667vw;
+  }
+}
+@media (max-width: 480px) {
+  .event-popup.event-end-popup .popup-inner {
+    padding-left: 4.4444444444vw;
+  }
+}
+@media (max-width: 480px) {
+  .event-popup.event-end-popup .popup-inner {
+    padding-right: 4.4444444444vw;
   }
 }
 

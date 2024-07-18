@@ -442,7 +442,10 @@
   @@include('../../../includes/popup/event02Popup.html')
   <!-- 직관 인증샷 매치 이벤트 참여완료 팝업 -->
   @@include('../../../includes/popup/event02CompletedPopup.html')
+  <!-- 이벤트 종료 안내 팝업 -->
+  @@include('../../../includes/popup/eventEndPopup.html')
   <script>
+    window.layerPopup.openPopup('endEndPopup', true);
     function startCounter() {
       // let scrollY = (window.pageYOffset || document.documentElement.scrollTop) + window.innerHeight;
       // let divPos = document.querySelector('.event01-content--wrap').offsetTop;

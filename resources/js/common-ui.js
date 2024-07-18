@@ -108,6 +108,7 @@
     });
 
     $(window).on('scroll', function () {
+      if (!$('.character--wrap').length) return;
       var scrollY = $(window).scrollTop();
       let divPos = $('.character--wrap').offset().top;
       if (scrollY >= divPos) {

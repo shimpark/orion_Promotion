@@ -42,6 +42,14 @@
               <div class="name">confirm 팝업</div>
               <button type="button" class="btn small primary" onclick="layerPopup.openPopup('systemConfirmPopup', true)">확인</button>
             </div>
+            <div class="list-row">
+              <div class="name">꼬북칩 공통 팝업</div>
+              <button type="button" class="btn small primary" onclick="layerPopup.openPopup('orionCommonPopup', true)">확인</button>
+            </div>
+            <div class="list-row">
+              <div class="name">이벤트 종료 안내 팝업</div>
+              <button type="button" class="btn small primary" onclick="layerPopup.openPopup('endEndPopup', true)">확인</button>
+            </div>
           </div>
           <div class="list-item">
             <h2 class="list-type">투표 및 응모관련 팝업</h2>
@@ -101,6 +109,10 @@
     @@include('../../../includes/popup/event02Popup.html')
     <!-- 직관 인증샷 매치 이벤트 참여완료 팝업 -->
     @@include('../../../includes/popup/event02CompletedPopup.html')
+    <!-- 꼬북칩 공통 사용 팝업 -->
+    @@include('../../../includes/popup/commonOrionPopup.html')
+    <!-- 이벤트 종료 안내 팝업 -->
+    @@include('../../../includes/popup/eventEndPopup.html')
   </body>
 
   <style>
